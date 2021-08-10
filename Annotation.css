@@ -1,0 +1,121 @@
+:root {
+    --sunset: linear-gradient(to right, #F27121cc, #E94057cc, #8A2387cc);
+    --nordic: linear-gradient(to right, #3B6978, #84A9AC, #CAE8D5);
+    --summer: linear-gradient(to right, #FFF5A5, #FFAA64, #FF8264, #FF6464);
+    --sakura: linear-gradient(to right, #FFC7C7, #FFE2E2, #F6F6F6, #8785A2);
+}
+
+body {
+    font-family: monospace;
+}
+
+.demo-content {
+    width: 30rem;
+    line-height: 1.5;
+}
+
+.annotate-box {
+    width: 30rem;
+    border-radius: 25px;
+    padding: 18px;
+}
+
+.annotate-highlight {
+    margin: 0 -0.4em;
+    padding: 0.1em 0.4em;
+    border-radius: 0.8em 0.3em;
+    background: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+.rough-box {
+    position: relative;
+}
+
+.rough-box::before {
+    content: "";
+    left: 0em;
+    top: 0em;
+    border-width: 2px;
+    border-style: solid;
+    position: absolute;
+    border-right-color: transparent;
+    width: 100%;
+    height: 1em;
+    transform: rotate(2deg);
+    opacity: 0.5;
+    border-radius: 0.25em;
+}
+
+.rough-box::after {
+    content: "";
+    left: 0em;
+    top: 0em;
+    border-width: 2px;
+    border-style: solid;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    position: absolute;
+    width: 100%;
+    height: 1em;
+    transform: rotate(-1deg);
+    opacity: 0.5;
+    border-radius: 0.25em;
+}
+
+.anotate-border-lilac {
+    border-color: #8785A2;
+}
+
+.gradient-sunset {
+    background-image: linear-gradient(to right, #F27121cc, #E94057cc, #8A2387cc);
+}
+
+.gradient-nordic {
+    background-image: linear-gradient(to right, #3B6978, #84A9AC, #CAE8D5);
+}
+
+.gradient-summer {
+    background-image: linear-gradient(to right, #FFF5A5, #FFAA64, #FF8264, #FF6464);
+}
+
+.gradient-sakura {
+    background-image: linear-gradient(to right, #FFC7C7, #FFE2E2, #F6F6F6);
+}
+
+.annotate-lilac {
+    background-color: #8785A2;
+    color: white;
+}
+
+.annotate-cream {
+    background-color: #F6F6F6;
+}
+
+.annotate-sakura {
+    background-color: #FFE2E2;
+}
+
+.annotate-pink {
+    background-color: #FFC7C7;
+}
+
+.annotate-nordic {
+    background-color: #204051;
+    color: white;
+}
+
+.annotate-slate {
+    background-color: #3B6978;
+    color: white;
+}
+
+.annotate-cenote {
+    background-color: #84A9AC;
+    color: white;
+}
+
+.annotate-foam {
+    background-color: #CAE8D5;
+}
