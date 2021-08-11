@@ -1,12 +1,3 @@
-body {
-    font-family: monospace;
-}
-
-.demo-content {
-    width: 30rem;
-    line-height: 1.5;
-}
-
 .annotate-box {
     width: 30rem;
     border-radius: 25px;
