@@ -1,10 +1,3 @@
-:root {
-    --sunset: linear-gradient(to right, #F27121cc, #E94057cc, #8A2387cc);
-    --nordic: linear-gradient(to right, #3B6978, #84A9AC, #CAE8D5);
-    --summer: linear-gradient(to right, #FFF5A5, #FFAA64, #FF8264, #FF6464);
-    --sakura: linear-gradient(to right, #FFC7C7, #FFE2E2, #F6F6F6, #8785A2);
-}
-
 body {
     font-family: monospace;
 }
@@ -18,6 +11,10 @@ body {
     width: 30rem;
     border-radius: 25px;
     padding: 18px;
+}
+
+.border-pink {
+    border-color: #FFC7C7;
 }
 
 .annotate-highlight {
@@ -64,9 +61,25 @@ body {
     border-radius: 0.25em;
 }
 
-.anotate-border-lilac {
-    border-color: #8785A2;
+.underline {
+    background-image: linear-gradient(120deg, #7af7a9 0%, #FFEB3B 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    transition: background-size 200ms ease-in;
 }
+
+.underline:hover {
+    background-size: 100% 88%;
+}
+
+
+/* ----------------------
+    Colors that are used
+   ----------------------*/
+
+
+/* Gradients */
 
 .gradient-sunset {
     background-image: linear-gradient(to right, #F27121cc, #E94057cc, #8A2387cc);
@@ -84,38 +97,72 @@ body {
     background-image: linear-gradient(to right, #FFC7C7, #FFE2E2, #F6F6F6);
 }
 
-.annotate-lilac {
+.gradient-bright {
+    background-image: linear-gradient(120deg, #7af7a9 0%, #FFEB3B 100%);
+}
+
+
+/* Colors */
+
+.color-lilac {
     background-color: #8785A2;
     color: white;
 }
 
-.annotate-cream {
+.color-cream {
     background-color: #F6F6F6;
 }
 
-.annotate-sakura {
+.color-sakura {
     background-color: #FFE2E2;
 }
 
-.annotate-pink {
+.color-pink {
     background-color: #FFC7C7;
 }
 
-.annotate-nordic {
+.color-nordic {
     background-color: #204051;
     color: white;
 }
 
-.annotate-slate {
+.color-slate {
     background-color: #3B6978;
     color: white;
 }
 
-.annotate-cenote {
+.color-cenote {
     background-color: #84A9AC;
     color: white;
 }
 
-.annotate-foam {
+.color-foam {
     background-color: #CAE8D5;
+}
+
+
+/* Borders */
+
+.border-nordic {
+    border-color: #204051;
+}
+
+.border-nordic::before {
+    border-color: #204051;
+}
+
+.border-nordic::after {
+    border-color: #204051;
+}
+
+.border-orange {
+    border-color: #F27121cc;
+}
+
+.border-orange::before {
+    border-color: #F27121cc;
+}
+
+.border-orange::after {
+    border-color: #F27121cc;
 }
